@@ -4,4 +4,4 @@ branding:
   icon: 'terminal'
   color: 'green' 
 runs:
-  main: 'entrypoint.ps1 --input1 Hello --input1 World'
+  main: 'entrypoint.ps1'
