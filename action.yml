@@ -1,4 +1,10 @@
-- task: PowerShell@2
+name: 'Sonarqube Job Trigger'
+description: 'Trigger a Sonarqube job'
+branding:
+  icon: 'terminal'
+  color: 'green' 
+runs:
+  - task: PowerShell@2
   inputs:
     targetType: 'filePath'
     filePath: entrypoint.ps1
