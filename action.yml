@@ -4,11 +4,4 @@ branding:
   icon: 'terminal'
   color: 'green' 
 runs:
-  - task: PowerShell@2
-  inputs:
-    targetType: 'filePath'
-    filePath: entrypoint.ps1
-    arguments: > # Use this to avoid newline characters in multiline string
-      -input1 "Hello"
-      -input2 "World"
-  displayName: 'Print Hello World'
+  main: 'entrypoint.ps1 --input1 Hello --input1 World'
