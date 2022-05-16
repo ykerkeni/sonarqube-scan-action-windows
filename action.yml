@@ -11,4 +11,4 @@ runs:
   using: composite
   steps:
     - run: entrypoint.ps1    
-        
+    id: script       
