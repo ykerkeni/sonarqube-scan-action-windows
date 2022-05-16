@@ -9,4 +9,4 @@ inputs:
     required: false
 runs: 
       |
-        ./entrypoint.ps1
+        Write-Host "second string"
