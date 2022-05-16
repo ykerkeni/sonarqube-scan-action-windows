@@ -8,5 +8,5 @@ inputs:
     description: 'Jenkins full URL including http/https protocol'
     required: false
 runs: 
-  run: |
-        ./entrypoint.ps1 
+      |
+        ./entrypoint.ps1
