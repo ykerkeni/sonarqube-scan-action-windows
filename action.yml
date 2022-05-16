@@ -10,5 +10,6 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: entrypoint.ps1    
-    id: script       
+    - run: entrypoint.ps1 
+    shell: pwsh
+    id: script
