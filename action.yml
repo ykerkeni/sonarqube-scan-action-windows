@@ -8,5 +8,5 @@ inputs:
     description: 'Jenkins full URL including http/https protocol'
     required: false
 runs: 
-main: Write-Host "second string"
+entrypoint.ps1
         
