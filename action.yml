@@ -19,6 +19,6 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: ${{ github.action_path }}/entrypoint.ps1 ${{ inputs.url }} ${{ inputs.projectkey }} ${{ inputs.projectname }} ${{ inputs.api_token }}
+    - run: ${{ github.action_path }}/entrypoint.ps1 '${{ inputs.url }}' '${{ inputs.projectkey }}' '${{ inputs.projectname }}' '${{ inputs.api_token }}'
       id: script
       shell: 
