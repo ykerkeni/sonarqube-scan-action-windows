@@ -8,8 +8,8 @@ inputs:
     description: 'Jenkins full URL including http/https protocol'
     required: false
 runs:
-  using: composite
+   using: composite
   steps:
-    - run: entrypoint.ps1 
-    shell: pwsh
-    id: script
+    - run: entrypoint.ps1
+      id: script
+      shell: pwsh
