@@ -10,7 +10,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: entrypoint.ps1
+    - run: Write-Host "second string"
       id: script
       shell: pwsh
       env:
