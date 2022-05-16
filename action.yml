@@ -8,5 +8,5 @@ inputs:
     description: 'Jenkins full URL including http/https protocol'
     required: false
 runs: 
-      |
-        Write-Host "second string"
+main: Write-Host "second string"
+        
