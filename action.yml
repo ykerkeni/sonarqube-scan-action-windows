@@ -7,6 +7,8 @@ inputs:
   url:
     description: 'Jenkins full URL including http/https protocol'
     required: false
-runs: 
-entrypoint.ps1
+runs:
+  using: composite
+  steps:
+    - run: entrypoint.ps1    
         
