@@ -3,6 +3,10 @@ description: 'Trigger a Sonarqube job'
 branding:
   icon: 'terminal'
   color: 'green' 
+inputs:
+  url:
+    description: 'Jenkins full URL including http/https protocol'
+    required: false
 runs:
   using: 'composite'
   main: 'entrypoint.ps1'
