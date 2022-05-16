@@ -8,8 +8,16 @@ inputs:
     description: 'Jenkins full URL including http/https protocol'
     required: false
 runs:
-   using: composite
+  using: composite
   steps:
-    - run: entrypoint.ps1
+    - run: ${{ github.action_path }}/action.ps1
       id: script
       shell: pwsh
+      env:
+        TEMP: ${{ runner.temp }}
+        PWSH_SCRIPT_ACTION_TEXT: ${{ inputs.script }}
+        PWSH_SCRIPT_ACTION_GITHUB: ${{ toJson(github) }}
+        PWSH_SCRIPT_ACTION_JOB: ${{ toJson(job) }}
+        PWSH_SCRIPT_ACTION_RUNNER: ${{ toJson(runner) }}
+        PWSH_SCRIPT_ACTION_STRATEGY: ${{ toJson(strategy) }}
+        PWSH_SCRIPT_ACTION_MATRIX: ${{ toJson(matrix) }}
