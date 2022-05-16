@@ -12,4 +12,4 @@ runs:
   steps:
     - run: ${{ github.action_path }}/entrypoint.ps1 ${{ inputs.url }}
       id: script
-      shell: pwsh
+      shell: 
