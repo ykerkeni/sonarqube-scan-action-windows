@@ -10,7 +10,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: "entrypoint.ps1"
+    - run: ${{ github.action_path }}/entrypoint.ps1
       id: script
       shell: pwsh
       env:
