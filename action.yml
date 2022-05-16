@@ -5,8 +5,17 @@ branding:
   color: 'green' 
 inputs:
   url:
-    description: 'Jenkins full URL including http/https protocol'
-    required: false
+    description: 'SonarQube full URL including http/https protocol'
+    required: true
+  projectkey:
+    description: 'Specifies the key of the analyzed project in SonarQube'
+    required: true
+  projectname: 
+    description: 'Specifies the name of the analyzed project in SonarQube. Adding this argument will overwrite the project name in SonarQube if it already exists.'
+    required: true
+  api_token:
+    description: 'Specifies the authentication token used to authenticate with to SonarQube. If this argument is added to the begin step, it must also be added to the end step.'
+    required: true
 runs:
   using: composite
   steps:
